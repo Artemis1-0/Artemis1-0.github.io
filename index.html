@@ -7,7 +7,7 @@
 
 <div class="navbar">
 	<div class="logo">
- 		 <img src="Resources\Simple%20Website.bmp"  width="93" height="93">
+ 		 <img src="Media\Simple%20Website.bmp"  width="93" height="93">
 	</div>
   	 <a class="active" href="file:Home%20Page.html#"><i class="fa fa-fw fa-home"></i> Home</a>
 	  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
@@ -18,6 +18,19 @@
 <p>Aka James Gregly.</p>
 <p>Aka EJ</p>
 
+<button onclick = "changeStyle()"> Toogle theme </button>
+   <script>
+      // change stylesheet using JavaScript
+      function changeStyle() {
+         var style = document.getElementById('style');
+         if (style.href == 'styles.css') {
+         style.href = 'testpage.css';
+         } else {
+            style.href = 'styles.css';
+         }
+      }
+   </script>
+   
 <a href="/Gadgetplus/gadgetplus.html">Stopwatch</a>
 
 <h2>Contents</h2>

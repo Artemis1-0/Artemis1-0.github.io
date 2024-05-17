@@ -1,0 +1,87 @@
+body {
+  background-color: ffffff;
+}
+
+h1 {
+  color: 247BA0;
+  text-align: center;
+  font-size: 70px
+}
+
+h2 {
+   color: 247BA0;
+   text-align: center;
+   font-size: 35px;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+}
+
+.family {
+   width: 100px;
+}
+
+.logo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left; margin: 0px 10px 0px 10px;
+}
+
+.button {
+  background-color: #3887A9; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.div-pictures {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  
+ /* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #4A92B1;
+  overflow: auto;
+ 
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 46px;
+  overflow: auto;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #3887A9;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #F25F5C;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+} 
