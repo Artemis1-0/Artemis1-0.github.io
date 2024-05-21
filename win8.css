@@ -1,0 +1,51 @@
+*{font-family: "Segoe UI", Frutiger, "Frutiger Linotype";}
+body{background-image:url('Win8Background.jpg');}
+
+#wrapper {
+    width: 70%;
+    padding: 0px;
+    margin-left:auto;
+     margin-right:auto;
+}
+.sortable-list li {
+    padding: 4px;
+    margin: 4px;
+    float: left;
+    border: 1px solid black;
+    list-style-image: none;
+    list-style: none;
+    list-style-type: none;
+    background-color:#204558;
+}
+
+#dashboard-layout .item.normal {
+    width: 100px;
+    height: 100px;
+}
+
+#dashboard-layout .item.wide {
+    width: 224px;
+    height: 100px;
+}
+
+.item.normal p{
+margin:0px;
+padding: 0px;
+}
+
+.item.wide p{
+margin:0px;
+padding: 0px;
+}
+
+h1{
+color:white;
+}
+
+#left_head{width:45%; float:left;}
+#right_head{width:45%; float:right; text-align:right;margin-right:15px;}
+
+.project-text {
+  text-align:center;
+  font-size:50px;
+}
