@@ -49,3 +49,70 @@ color:white;
   text-align:center;
   font-size:50px;
 }
+
+.column-4 {
+  float: left;
+  width: 21%;
+  padding: 10px;
+  margin:20px;
+  height: 250px;
+}
+
+.tile-1 {
+  background-image: url('./media/youtube-logo.webp');
+  background-size: cover;
+}
+
+.tile-2 {
+  background-color:white;
+}
+
+.tile-3 {
+	background: url('./media/github.jpg');
+	background-size: cover;
+}
+
+.tile-4 {
+  background-color:#112d4e;
+}
+
+.tile-5 {
+  background-color:#F9F7F7;
+}
+
+.tile-6 {
+  background-color:#209BFF;
+}
+
+.tile-7 {
+    background-color:#ffffff00;
+}
+
+.tile-8 {
+  background: url('./images/project-right.jpeg');
+  background-size: cover;
+}
+
+.tile-2:hover {
+  background-color:#FEDE00;
+}
+
+.tile-3:hover {
+   background-color: #FEDE00;
+}
+
+.tile-4:hover {
+   background-color: #FEDE00;
+}
+
+.tile-5:hover {
+   background-color: #FEDE00;
+}
+
+.tile-6:hover {
+   background-color: #FEDE00;
+}
+
+.tile-7:hover {
+   background-color: #FEDE00;
+}

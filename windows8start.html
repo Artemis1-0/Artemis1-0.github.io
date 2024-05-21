@@ -11,7 +11,7 @@
 <script type="text/javascript">
 function update_columns() {
     var positions = []
-    $("#dashboard-layout .item").each(function() {
+    $("#tile.item").each(function() {
         var $item = $(this);
         positions.push($item.attr('id'));
     });
@@ -39,10 +39,41 @@ $(function() {
 
 <body>
 
-<div id="left_head"><h1>Start</h1></div>
-<div id="right_head"><h1>Lawrence Cherone</h1></div>
 <div style="clear:both;"></div>
 
+<div id="tile">
+	<a href="https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-17.png">
+	<div class="column-4 tile-1">
+	</div>
+	
+	<a href="https://www.google.com">
+	<div class="column-4 tile-2">
+	<h2 class="project-text">WEB <br>Design</h2>
+	</div>
+	
+	<a href="https://github.com/Artemis1-0">
+	<div class="column-4 tile-3">
+	</div>
+	
+	<a href="https://www.fiverr.com/james_gregly">
+	<div class="column-4 tile-4">
+	</div>
+	
+	<div class="column-4 tile-5">
+	<h2 class="project-text">WEB <br>Design</h2>
+	</div>
+	
+	<div class="column-4 tile-6">
+	<h2 class="project-text">WEB <br>Design</h2>
+	</div>
+	
+	<div class="column-4 tile-7">
+	<h2 class="project-text">WEB <br>Design</h2>
+	</div>
+	
+	<div class="column-4 tile-8">
+	<h2 class="project-text">WEB <br>Design</h2>
+	</div>
 <div id="wrapper">
 
 <ul class="sortable-list" id="dashboard-layout">
