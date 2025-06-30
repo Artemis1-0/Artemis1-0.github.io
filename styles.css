@@ -1,86 +1,106 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
 body {
-  background-color: lightblue;
+  margin:0;
 }
 
 h1 {
-  color: white;
-  text-align: center;
-  font-size: 70px
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
 }
-
-h2 {
-   color: white;
-   text-align: center;
-   font-size: 35px;
-}
-
 p {
-  font-family: verdana;
-  font-size: 20px;
-  text-align: center;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
 }
 
-.family {
-   width: 100px;
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
 }
-
 .logo {
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: left; margin: 0px 15px 0px 0px;
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
 }
 
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
 }
 
-.div-pictures {
- display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-  
- /* Style the navigation bar */
-.navbar {
+.waves {
+  position:relative;
   width: 100%;
-  background-color: #33cccc;
-  overflow: auto;
- 
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
 }
 
-/* Navbar links */
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 20px;
-  color: white;
-  text-decoration: none;
-  font-size: 46px;
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
 }
 
-/* Navbar links on mouse-over */
-.navbar a:hover {
-  background-color: #4BDE97;
-}
+/* Animation */
 
-/* Current/active navbar link */
-.active {
-  background-color: #FBC255;
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
 }
-
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
   }
-} 
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
