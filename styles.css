@@ -38,6 +38,10 @@ p {
   padding: 0;
 }
 
+.main {
+  text-align: center;
+}
+
 .flex { /*Flexbox for containers*/
   display: flex;
   justify-content: center;
